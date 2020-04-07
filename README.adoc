@@ -3,9 +3,13 @@
 
 ## Hands on概要：
 1) NiFi でテストデータを集めて、Kafkaに送る
+
 2) SMMのWebUIで、KafkaのTopic作成とKafka管理
+
 3) NiFiで、KafkaのデータをHDFSに保存
+
 4) HDFSに保存したデータをHUE+Hiveで分析
+
 5) HDFSに保存したデータをCML+Sparkで分析
 
 
