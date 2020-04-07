@@ -1,7 +1,23 @@
 # Cloudera CDP / CDF Workshop
 
 
-## データ収集
+## Hands on概要：
+1) NiFi でテストデータを集めて、Kafkaに送る
+2) SMMのWebUIで、KafkaのTopic作成とKafka管理
+3) NiFiで、KafkaのデータをHDFSに保存
+4) HDFSに保存したデータをHUE+Hiveで分析
+5) HDFSに保存したデータをCML+Sparkで分析
+
+
+## 1)データ収集
+
+http://<public-ip>:7180/cmf/login
+admin/admin
+
+image::smm/105_CM.png[width=800]
+
+テンプレートをアップロード
+file::smm/produce-movies.xml
 
 image::smm/110_NiFi_Template.png[width=800]
 
