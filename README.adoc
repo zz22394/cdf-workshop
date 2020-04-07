@@ -16,6 +16,8 @@ admin/admin
 
 image::smm/105_CM.png[width=800]
 
+image::smm/108_CM_NiFi.png[width=800]
+
 テンプレートをアップロード
 file::smm/produce-movies.xml
 
