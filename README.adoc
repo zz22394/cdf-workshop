@@ -1,2 +1,42 @@
-# cdf-workshop
+# Cloudera CDP / CDF Workshop
 
+
+## データ収集
+
+image::smm/110_NiFi_Template.png[width=800]
+
+
+
+
+```sql
+create database testdb;
+use testdb;
+create table test01 (a01 string);
+
+CREATE EXTERNAL TABLE IF NOT EXISTS movies
+  (ID int,
+  title string,
+  genres string
+  )
+  ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ','
+  STORED AS TEXTFILE
+  LOCATION '/user/centos/movies';
+
+
+select count(*) from movies;
+
+select * from movies limit 10;
+```
+
+
+
+```scala
+//import org.apache.spark
+import org.apache.spark.sql.types._;
+
+val schema = (new StructType).add("id", IntegerType).add("title", StringType).add("genres", StringType)
+
+val input_df = spark.read.option("Sep", ",").schema(schema).csv("/user/centos/movies/")
+input_df.write.option("compression", "snappy").parquet("/user/centos/movies_parquet/")
+```

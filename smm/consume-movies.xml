@@ -155,7 +155,7 @@
                     </entry>
                     <entry>
                         <key>Minimum Number of Entries</key>
-                        <value>1</value>
+                        <value>10</value>
                     </entry>
                     <entry>
                         <key>Maximum Number of Entries</key>
@@ -177,7 +177,7 @@
                     </entry>
                     <entry>
                         <key>Delimiter Strategy</key>
-                        <value>Filename</value>
+                        <value>Text</value>
                     </entry>
                     <entry>
                         <key>Header File</key>
@@ -187,6 +187,7 @@
                     </entry>
                     <entry>
                         <key>Demarcator File</key>
+                        <value>${literal('&amp;#10;'):unescapeXml()}</value>
                     </entry>
                     <entry>
                         <key>Compression Level</key>
@@ -425,7 +426,7 @@
                     </entry>
                     <entry>
                         <key>topic</key>
-                        <value>zzeng01</value>
+                        <value>movies</value>
                     </entry>
                     <entry>
                         <key>topic_type</key>
@@ -626,7 +627,7 @@
                     </entry>
                     <entry>
                         <key>Directory</key>
-                        <value>/user/centos/</value>
+                        <value>/user/centos/movies</value>
                     </entry>
                     <entry>
                         <key>Conflict Resolution Strategy</key>
@@ -679,5 +680,5 @@
             <type>org.apache.nifi.processors.hadoop.PutHDFS</type>
         </processors>
     </snippet>
-    <timestamp>04/07/2020 13:05:23 UTC</timestamp>
+    <timestamp>04/07/2020 14:08:44 UTC</timestamp>
 </template>
