@@ -45,6 +45,12 @@ Template を選択：
 
 image::smm/114_NiFi_Choose_Temp.png[width=800]
 
+Template Import完了
+
+image::smm/115_NiFi_Choose_Temp2.png.png[width=800]
+
+image::smm/116_NiFi_Choose_Temp3.png.png[width=800]
+
 ```sql
 create database testdb;
 use testdb;
