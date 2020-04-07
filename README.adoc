@@ -14,12 +14,20 @@
 
 
 ## 1)データ収集
+自分のアカウント・サーバーを取得。
+サーバーアドレス：
+
+
+Cloudera Managerにログイン
+CM URL:
 
 http://<public-ip>:7180/cmf/login
+
 admin/admin
 
 image::smm/105_CM.png[width=800]
 
+NiFi にログイン
 image::smm/108_CM_NiFi.png[width=800]
 
 テンプレートをアップロード
@@ -27,8 +35,11 @@ file::smm/produce-movies.xml
 
 image::smm/110_NiFi_Template.png[width=800]
 
+image::smm/112_NiFi_Template2.png[width=800]
+image::smm/113_NiFi_Template3.png[width=800]
 
-
+Template を選択：
+image::smm/114_NiFi_Choose_Temp.png[width=800]
 
 ```sql
 create database testdb;
