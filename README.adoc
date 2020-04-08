@@ -18,22 +18,22 @@
 サーバーアドレス：
 
 
-Cloudera Managerにログイン
+### 1.1 Cloudera Managerにログイン
 CM URL:
 
 http://<public-ip>:7180/cmf/login
 
 admin/admin
 
-### NiFi でデータ収集のデータフロー作成
+### 1.2 NiFi でデータ収集のデータフロー作成
 
 image::smm/105_CM.png[width=800]
 
-NiFi にログイン
+#### 1.2.1 NiFi にログイン
 
 image::smm/108_CM_NiFi.png[width=800]
 
-テンプレートをアップロード
+#### 1.2.2 テンプレートをアップロード
 
 file::smm/produce-movies.xml
 
@@ -43,18 +43,18 @@ image::smm/112_NiFi_Template2.png[width=800]
 
 image::smm/113_NiFi_Template3.png[width=800]
 
-Template を選択：
+#### 1.2.3 Template を選択：
 
 image::smm/114_NiFi_Choose_Temp.png[width=800]
 
-Template Import完了
+#### 1.2.4 Template Import完了
 
 image::smm/115_NiFi_Choose_Temp2.png.png[width=800]
 
 image::smm/116_NiFi_Choose_Temp3.png.png[width=800]
 
 
-### SMM でKafka管理
+### 1.3 SMM でKafka管理
 
 SMM にログイン
 
