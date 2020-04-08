@@ -195,7 +195,7 @@
                     </entry>
                     <entry>
                         <key>Directory</key>
-                        <value>/user/centos/movies</value>
+                        <value>/tmp/movies</value>
                     </entry>
                     <entry>
                         <key>Conflict Resolution Strategy</key>
