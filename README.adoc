@@ -105,6 +105,34 @@ image::smm/113_NiFi_Template3.png[width=800]
 ## 2) Hive、HUE、CDSW(CML)でデータを分析・ETL
 
 
+image::smm/201_Import_1.png[width=800]
+image::smm/201_Import_2.png[width=800]
+image::smm/201_Import_3.png[width=800]
+image::smm/204_HUE_1.png[width=800]
+image::smm/204_HUE_2.png[width=800]
+image::smm/204_HUE_3.png[width=800]
+image::smm/204_HUE_4.png[width=800]
+image::smm/204_HUE_5.png[width=800]
+image::smm/204_HUE_6.png[width=800]
+image::smm/204_HUE_7.png[width=800]
+image::smm/206_HUE_Hive_1.png[width=800]
+image::smm/206_HUE_Hive_10.png[width=800]
+image::smm/206_HUE_Hive_11.png[width=800]
+image::smm/206_HUE_Hive_12.png[width=800]
+image::smm/206_HUE_Hive_13.png[width=800]
+image::smm/206_HUE_Hive_14.png[width=800]
+image::smm/206_HUE_Hive_2.png[width=800]
+image::smm/206_HUE_Hive_3.png[width=800]
+image::smm/206_HUE_Hive_4.png[width=800]
+image::smm/206_HUE_Hive_5.png[width=800]
+image::smm/206_HUE_Hive_6.png[width=800]
+image::smm/206_HUE_Hive_7.png[width=800]
+image::smm/206_HUE_Hive_8.png[width=800]
+image::smm/206_HUE_Hive_9.png[width=800]
+image::smm/210_CML_01.png[width=800]
+image::smm/210_CML_02.png[width=800]
+image::smm/210_CML_03.png[width=800]
+
 
 
 ```sql
@@ -122,9 +150,9 @@ CREATE EXTERNAL TABLE IF NOT EXISTS movies
   STORED AS TEXTFILE
   LOCATION '/tmp/movies';
 
-select count(*) from movies;
+select count(*) from testdb.movies;
 
-select * from movies limit 10;
+select * from testdb.movies limit 10;
 ```
 
 
