@@ -115,8 +115,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS movies
   ROW FORMAT DELIMITED
   FIELDS TERMINATED BY ','
   STORED AS TEXTFILE
-  LOCATION '/user/centos/movies';
-
+  LOCATION '/tmp/movies';
 
 select count(*) from movies;
 
