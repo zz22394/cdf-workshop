@@ -104,23 +104,29 @@ image::smm/113_NiFi_Template3.png[width=800]
 
 ## 2) Hive、HUE、CDSW(CML)でデータを分析・ETL
 
-
+### 2.1) NiFiのデータフローで、Kafka をConsumeして、HDFSに保存
 image::smm/201_Import_1.png[width=800]
 image::smm/201_Import_2.png[width=800]
 image::smm/201_Import_3.png[width=800]
+
+### 2.2) HUEで、保存したデータを分析
+
+### 2.2.1) HUEにログイン
+
 image::smm/204_HUE_1.png[width=800]
 image::smm/204_HUE_2.png[width=800]
+
+### 2.2.1) HUEでファイルを確認
+
 image::smm/204_HUE_3.png[width=800]
 image::smm/204_HUE_4.png[width=800]
 image::smm/204_HUE_5.png[width=800]
 image::smm/204_HUE_6.png[width=800]
 image::smm/204_HUE_7.png[width=800]
+
+### 2.3.1) HUEのHiveを使ってデータを分析
+
 image::smm/206_HUE_Hive_1.png[width=800]
-image::smm/206_HUE_Hive_10.png[width=800]
-image::smm/206_HUE_Hive_11.png[width=800]
-image::smm/206_HUE_Hive_12.png[width=800]
-image::smm/206_HUE_Hive_13.png[width=800]
-image::smm/206_HUE_Hive_14.png[width=800]
 image::smm/206_HUE_Hive_2.png[width=800]
 image::smm/206_HUE_Hive_3.png[width=800]
 image::smm/206_HUE_Hive_4.png[width=800]
@@ -129,6 +135,12 @@ image::smm/206_HUE_Hive_6.png[width=800]
 image::smm/206_HUE_Hive_7.png[width=800]
 image::smm/206_HUE_Hive_8.png[width=800]
 image::smm/206_HUE_Hive_9.png[width=800]
+image::smm/206_HUE_Hive_10.png[width=800]
+image::smm/206_HUE_Hive_11.png[width=800]
+image::smm/206_HUE_Hive_12.png[width=800]
+image::smm/206_HUE_Hive_13.png[width=800]
+image::smm/206_HUE_Hive_14.png[width=800]
+
 image::smm/210_CML_01.png[width=800]
 image::smm/210_CML_02.png[width=800]
 image::smm/210_CML_03.png[width=800]
