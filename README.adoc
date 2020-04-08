@@ -69,6 +69,24 @@ image::smm/132_SMM_New_Topic_2.png[width=800]
 image::smm/132_SMM_New_Topic_3.png[width=800]
 image::smm/132_SMM_New_Topic_4.png[width=800]
 
+#### 1.3.3 SMMで、KafkaのTopic確認
+
+image::smm/132_SMM_New_Topic_5.png[width=800]
+image::smm/132_SMM_New_Topic_6.png[width=800]
+
+#### 1.3.4 NiFiで、KafkaのTopicにメッセージを投入
+
+image::smm/134_Kafka_MQ_1.png[width=800]
+image::smm/134_Kafka_MQ_2.png[width=800]
+image::smm/134_Kafka_MQ_3.png[width=800]
+image::smm/134_Kafka_MQ_4.png[width=800]
+
+#### 1.3.5 SMMで、KafkaのTopicとProducer関係の確認
+
+image::smm/135_Kafka_MQ_Producer.png[width=800]
+
+
+
 ```sql
 create database testdb;
 use testdb;
