@@ -56,12 +56,18 @@ image::smm/116_NiFi_Choose_Temp3.png.png[width=800]
 
 ### 1.3 SMM でKafka管理
 
-SMM にログイン
+#### 1.3.1 SMM にログイン
 
 image::smm/130_SMM_01.png[width=800]
 
 image::smm/130_SMM_02.png[width=800]
 
+#### 1.3.2 SMMで、KafkaのTopic作成
+
+image::smm/132_SMM_New_Topic_1.png[width=800]
+image::smm/132_SMM_New_Topic_2.png[width=800]
+image::smm/132_SMM_New_Topic_3.png[width=800]
+image::smm/132_SMM_New_Topic_4.png[width=800]
 
 ```sql
 create database testdb;
