@@ -139,24 +139,6 @@ image::smm/206_HUE_Hive_7.png[width=800]
 
 ### 2.3.3) Hive でテーブル作成、データ分析
 
-image::smm/206_HUE_Hive_8.png[width=800]
-image::smm/206_HUE_Hive_9.png[width=800]
-image::smm/206_HUE_Hive_10.png[width=800]
-
-### 2.3.4) Hiveで作ったメタデータを、再びAtlasで確認
-
-image::smm/206_HUE_Hive_11.png[width=800]
-image::smm/206_HUE_Hive_12.png[width=800]
-image::smm/206_HUE_Hive_13.png[width=800]
-image::smm/206_HUE_Hive_14.png[width=800]
-
-### 2.4) データサイエンティストがCML＋Sparkを使って分析
-
-image::smm/210_CML_01.png[width=800]
-image::smm/210_CML_02.png[width=800]
-image::smm/210_CML_03.png[width=800]
-
-
 
 ```sql
 create database testdb;
@@ -179,6 +161,19 @@ select * from testdb.movies limit 10;
 ```
 
 
+image::smm/206_HUE_Hive_8.png[width=800]
+image::smm/206_HUE_Hive_9.png[width=800]
+image::smm/206_HUE_Hive_10.png[width=800]
+
+### 2.3.4) Hiveで作ったメタデータを、再びAtlasで確認
+
+image::smm/206_HUE_Hive_11.png[width=800]
+image::smm/206_HUE_Hive_12.png[width=800]
+image::smm/206_HUE_Hive_13.png[width=800]
+image::smm/206_HUE_Hive_14.png[width=800]
+
+### 2.4) データサイエンティストがCML＋Sparkを使って分析
+
 
 ```scala
 //import org.apache.spark
@@ -189,3 +184,8 @@ val schema = (new StructType).add("id", IntegerType).add("title", StringType).ad
 val input_df = spark.read.option("Sep", ",").schema(schema).csv("/tmp/movies/")
 input_df.write.option("compression", "snappy").parquet("/tmp/movies_parquet/")
 ```
+
+image::smm/210_CML_01.png[width=800]
+image::smm/210_CML_02.png[width=800]
+image::smm/210_CML_03.png[width=800]
+
