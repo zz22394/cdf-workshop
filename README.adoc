@@ -37,7 +37,7 @@ image::smm/108_CM_NiFi.png[width=800]
 
 #### 1.2.2 テンプレートをアップロード
 
-file::smm/produce-movies.xml
+link::smm/produce-movies.xml[NiFi->Kafkaへのテストデータ生成データフロー]
 
 image::smm/110_NiFi_Template.png[width=800]
 
