@@ -45,6 +45,11 @@ image::smm/112_NiFi_Template2.png[width=800]
 
 image::smm/113_NiFi_Template3.png[width=800]
 
+NOTE: プロセッサーグループ（プロセッサーのフォルダみたいなもの）を作成し、プロセッサーグループに入る
+
+image::smm/113_NiFi_Template4.png[width=800]
+image::smm/113_NiFi_Template5.png[width=800]
+
 #### 1.2.3 Template を選択：
 
 image::smm/114_NiFi_Choose_Temp.png[width=800]
