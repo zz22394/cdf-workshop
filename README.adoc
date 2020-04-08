@@ -130,6 +130,6 @@ import org.apache.spark.sql.types._;
 
 val schema = (new StructType).add("id", IntegerType).add("title", StringType).add("genres", StringType)
 
-val input_df = spark.read.option("Sep", ",").schema(schema).csv("/user/centos/movies/")
-input_df.write.option("compression", "snappy").parquet("/user/centos/movies_parquet/")
+val input_df = spark.read.option("Sep", ",").schema(schema).csv("/tmp/movies/")
+input_df.write.option("compression", "snappy").parquet("/tmp/movies_parquet/")
 ```
