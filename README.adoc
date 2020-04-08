@@ -89,7 +89,16 @@ image::smm/135_Kafka_MQ_Producer.png[width=800]
 
 #### 1.3.6 NiFiで、Kafkaに入ったデータを読み込んで、ある程度纏めてHDFSに保存
 
+link::smm/consume-movies.xml[NiFiでKafkaからHDFSへデータ保存データフロー]
+
 image::smm/110_NiFi_Template.png[width=800]
+
+image::smm/112_NiFi_Template2.png[width=800]
+
+image::smm/113_NiFi_Template3.png[width=800]
+
+## 2) Hive、HUE、CDSW(CML)でデータを分析・ETL
+
 
 
 
